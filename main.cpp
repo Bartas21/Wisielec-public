@@ -124,8 +124,7 @@ void dostepne_litery(string taken)
 	DrukujWiadomosc("Dostepne litery:");
 	DrukujLitery(taken, 'a', 'm');
 	DrukujLitery(taken, 'n', 'z');
-	DrukujLitery(taken, 'A', 'M');
-	DrukujLitery(taken, 'N', 'Z');
+	
 }
 // funkcja wypisyjaca slowo i sprawdzajaca czy gra zostala wygrana
 bool WypiszSlowo_i_SprawdzWygarna(string slowo, string  pudlo)
