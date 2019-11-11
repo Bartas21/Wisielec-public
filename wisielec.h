@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include"password_maker.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Wisielec; }
 QT_END_NAMESPACE
@@ -12,11 +14,14 @@ class Wisielec : public QMainWindow
     Q_OBJECT
 
 public:
+
     Wisielec(QWidget *parent = nullptr);
     ~Wisielec();
 
+    password_maker manager;
+
+
 private slots:
-    void NumPressed();
 
 
     void on_A_clicked();
@@ -67,7 +72,8 @@ private slots:
 
     void on_Z_clicked();
 
-    void on_pushButton_clicked();
+    void on_RESET_clicked();
+
 
 private:
     Ui::Wisielec *ui;
